@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo Mật | Security Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cyber<span>Secure</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="security.html" class="active">Bảo Mật</a></li>
+                <li><a href="system.html">Hệ Thống</a></li>
+                <li><a href="ai.html">Trí Tuệ Nhân Tạo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Giám Sát An Ninh Mạng</h1>
+        <div class="dashboard-grid">
+            <div class="stat-box red">
+                <h3>Cảnh Báo Xâm Nhập</h3>
+                <p class="number">12</p>
+            </div>
+            <div class="stat-box green">
+                <h3>Trạng Thái Tường Lửa</h3>
+                <p class="status">Đang hoạt động</p>
+            </div>
+        </div>
+
+        <section class="log-section">
+            <h2>Nhật ký truy cập gần đây</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Địa chỉ IP</th>
+                        <th>Hành động</th>
+                        <th>Mức độ</th>
+                    </tr>
+                </thead>
+                <tbody id="security-logs">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
